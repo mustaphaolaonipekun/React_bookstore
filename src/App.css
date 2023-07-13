@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  outline: none;
+  font-family: "Nunito", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: peachpuff;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.bookstore {
+  background: #fffffe;
+  padding: 2rem 9%;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px rgba(146, 146, 146, 0.34);
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3px;
+  margin: 3px;
+  height: auto;
 }
+.heads {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+  padding: 2px;
+}
+i {
+  color: rgba(13, 8, 66, 1);
+  padding: 2px;
+  margin: 2px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+input {
+  border-color: #eaeaea;
+  border-radius: 8px;
+  background: #eaeaea;
+  padding: 4px;
+  width: 30%;
+  height: 25%;
+}
+input::placeholder {
+  color: rgba(13, 8, 66, 1);
+  font-size: 10px;
+}
+#basket{
+  border-radius: 8px;
+background: var(--general-color, #FFCE1A);
+color: rgba(255, 255, 255, 1);
+width: 45%;
+height: 35%;
+padding: 4px;
+margin: 3px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+#basket i{
+  font-size: 10px;
+  color: rgba(255, 255, 255, 1);
+  margin: 2px;
+
+}
+#basket h3{
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  margin: 2px;
+
 }
