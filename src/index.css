@@ -227,22 +227,27 @@ input::placeholder {
 }
 
 .sells{
-  margin: 3px;
-  padding: 2rem 4%;
   display: flex;
   flex-wrap: wrap;
-  /* gap: 2px; */
-  /* justify-content: space-; */
+  gap: 1px;
   height: auto;
   width: 100%;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+}
+.get{
+  display: flex;
+  gap: 0.5px;
+  justify-content: space-between;
+  margin-block: 7px;
+
+}
+.get img{
+  width: 30%;
 }
 
-.imgs img{
-  width: 60%;
-  /* padding: 3px; */
-}
 .buy{
-  /* margin-left: -100px; */
 padding: 5px;
 margin: 5px;
 }
@@ -265,7 +270,7 @@ margin: 3px;
 .pay{
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 7px;
   margin: 3px;
   padding: 3px;
 }
@@ -383,4 +388,5 @@ padding: 2px;
   html{
     font-size: 32.5%;
   }
+  
 }
