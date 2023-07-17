@@ -1,6 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+// import { useState } from "react";
+
+//the use state can be used to track state in our function component
+// we can change our state like (onClick, onMouseClick, onPause)
+// function Title() {
+//   const Random = () => {
+//     SetTitle("Random Title");
+//   };
+
+//   const [title, SetTitle] = useState("This is a title");
+//   return (
+//     <>
+//       <h4> This is a {title} </h4>
+//       <button type="btn" className="btn" onClick={Random}>
+//         change Title
+//       </button>
+//     </>
+//   );
+// }
+
+// ReactDOM.render(<Title />, document.getElementById("root"));
 
 function BookStore() {
   return (
@@ -82,51 +103,50 @@ const Top = () => {
 const Seller = () => {
   return (
     <div className="sells">
-      <div className="imgs">
-        <img src="./images/c.png" alt="" className="img"></img>
-      </div>
-
-      <div className="buy">
-        <h4>Pride and Protest</h4>
-        <p>A woman goes head-to-head with the CEO of...</p>
-        <div className="pay">
-          <h4>$ 18.50</h4>
-          <h5>20.78</h5>
-        </div>
-        <div className="subscribe">
-          <i className="bx bx-cart"></i>
-          <h3>Add to basket</h3>
-        </div>
-      </div>
-      <div className="imgs">
+      <div className="get">
         <img src="./images/a.png" alt="" className="img"></img>
-      </div>
-      <div className="buy">
-        <h4>Forget a Mentor, find ...</h4>
-        <p>in this powerful yet practical book, economist and...</p>
-        <div className="pay">
-          <h4>$ 32.99</h4>
-          <h5>$ 29.99</h5>
+        <div className="buy">
+            <h4>I want a better ..</h4>
+          <p>A woman goes head-to-head with the...</p>
+          <div className="pay">
+            <h4>$ 21.50</h4>
+            <h5>29.75</h5>
+          </div>
+          <div className="subscribe">
+            <i className="bx bx-cart"></i>
+            <h3>Add to basket</h3>
+          </div>
         </div>
-        <div className="subscribe">
-          <i className="bx bx-cart"></i>
-          <h3>Add to basket</h3>
+      </div>
+      <div className="get">
+        <img src="./images/d.png" alt="" className="img"></img>
+        <div className="buy">
+          <h4>the midnight Library</h4>
+          <p>Lindbergh's Pharmacy is an Athens and also...</p>
+          <div className="pay">
+            <h4>$ 10.50</h4>
+            <h5>15.75</h5>
+          </div>
+          <div className="subscribe">
+            <i className="bx bx-cart"></i>
+            <h3>Add to basket</h3>
+          </div>
         </div>
       </div>
 
-      <div className="imgs">
-        <img src="./images/e.png" alt="" className="img"></img>
-      </div>
-      <div className="buy">
-        <h4>My government means to kill me ...</h4>
-        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
-        <div className="pay">
-          <h4>$ 30.99</h4>
-          <h5>$ 27.19</h5>
-        </div>
-        <div className="subscribe">
-          <i className="bx bx-cart"></i>
-          <h3>Add to basket</h3>
+      <div className="get">
+        <img src="./images/c.png" alt="" className="img"></img>
+        <div className="buy">
+          <h4>The time has come </h4>
+          <p>the time to shine in the star dulging all times...</p>
+          <div className="pay">
+            <h4>$ 30.99</h4>
+            <h5>$ 27.89</h5>
+          </div>
+          <div className="subscribe">
+            <i className="bx bx-cart"></i>
+            <h3>Add to basket</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -144,51 +164,53 @@ const Recom = () => {
 const Sellers = () => {
   return (
     <div className="sells">
-      <div className="imgs">
+      <div className="get">
+        <img src="./images/e.png" alt="" className="img"></img>
+        <div className="buy">
+          <h4>The Government wants ...</h4>
+          <p>The Government of a country is aristocrat...</p>
+          <div className="pay">
+            <h4>$ 14.50</h4>
+            <h5>19.75</h5>
+          </div>
+          <div className="subscribe">
+          <i className="bx bx-cart"></i>
+            <h3>Add to basket</h3>
+          </div>
+        </div>
+      </div>
+      <div className="get">
         <img src="./images/h.png" alt="" className="img"></img>
-      </div>
-      <div className="buy">
-        <h4>Pride and Protest</h4>
-        <p>A woman goes head-to-head with the CEO of...</p>
-        <div className="pay">
-          <h4>$ 14.50</h4>
-          <h5>19.75</h5>
-        </div>
-        <div className="subscribe">
+        <div className="buy">
+          <h4>Pride and Protest</h4>
+          <p>A woman goes head-to-head with the CEO...</p>
+          <div className="pay">
+            <h4>$ 14.50</h4>
+            <h5>19.75</h5>
+          </div>
+          <div className="subscribe">
           <i className="bx bx-cart"></i>
-          <h3>Add to basket</h3>
+            <h3>Add to basket</h3>
+          </div>
         </div>
       </div>
-      <div className="imgs">
+      <div className="get">
         <img src="./images/b.png" alt="" className="img"></img>
-      </div>
-      <div className="buy">
-        <h4>Forget a Mentor, Find......</h4>
-        <p>In this powerful yet practical book, economist and...</p>
-        <div className="pay">
-          <h4>$ 32.99</h4>
-          <h5>$ 29.99</h5>
-        </div>
-        <div className="subscribe">
+        <div className="buy">
+          <h4>Find a sponsor</h4>
+          <p>to find a sponsor through the highs and lows...</p>
+          <div className="pay">
+            <h4>$ 14.50</h4>
+            <h5>19.75</h5>
+          </div>
+          <div className="subscribe">
           <i className="bx bx-cart"></i>
-          <h3>Add to basket</h3>
+            <h3>Add to basket</h3>
+          </div>
         </div>
       </div>
-      <div className="imgs">
-        <img src="./images/d.png" alt="" className="img"></img>
-      </div>
-      <div className="buy">
-        <h4>The Midnight Library</h4>
-        <p>Lindbergh's Pharmacy is an Athens, Georgia, institution...</p>
-        <div className="pay">
-          <h4>$ 30.99</h4>
-          <h5>$ 27.89</h5>
-        </div>
-        <div className="subscribe">
-          <i className="bx bx-cart"></i>
-          <h3>Add to basket</h3>
-        </div>
-      </div>
+
+    
     </div>
   );
 };
@@ -294,3 +316,4 @@ const Footer = () => {
   );
 };
 ReactDOM.render(<BookStore />, document.getElementById("root"));
+
